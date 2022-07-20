@@ -50,18 +50,18 @@ hr{
 /* .watch-live-btn styles */
 
 .watch-live-btn{
+	display: flex;
+	align-items: center;
 	width: 187px;
 	font-size: 20px;
 	margin-top: 20px;
 	border: none;
-	display: flex;
-	align-items: center;
 	box-shadow: inset 0 0 0 0 #d7c5ec;
 	transition: ease-out .3s;
 	text-decoration: none;
     color: white;
     padding: 16px 25px;
-    background-color: #DD0000;
+    background-color: rgba(16, 255, 175, 0.473);
     border-radius: 5px;
 	font-family: 'Poppins', sans-serif;
 }
@@ -99,24 +99,26 @@ main{
 	max-width:1170px;
 	display: grid;
 	grid-template-columns: 300px 1fr;
+	gap: 30px;
 	margin: 3em 0;
 }
 
 /* nav links styles */
 
 nav{
-	padding: 0 30px;
+	padding: 0px;
 	background-color: #161616;
 	border-radius: 10px;
-	height: 332px;
+	width: 312px;
+	height: 312px;
 }
 nav ul li{
-	width: 230px;
-	margin: 40px 0;
+	width: 252px;
+	margin: 30px 30px 30px 30px;
 	list-style: none;
 	text-align: center;
 	border-radius: 5px;
-	padding: 17px 0;
+	padding: 18px 0;
 	background-color: white;
 }
 nav ul li a{
@@ -126,16 +128,15 @@ nav ul li a{
 	color: #000;
 }
 .active{
-	background-color: red;
+	background-color: rgba(16, 255, 175, 0.473);
 }
 .active a{
-	color: #fff;
+	color: rgba(0, 0, 0, 0.705);
 }
 
 /* blogs styles */
 
 .blogs{
-	padding:0 20px 20px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
@@ -272,19 +273,6 @@ footer h2{
 	font-size: 16px;
 	color: #4d4d4d;
 }
-/* .blogs{
-	padding:0 20px 20px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-}
-.blog{
-	box-shadow: 2px 2px 25px gray;
-	border-radius: 10px;
-	overflow: hidden;
-} */
-
-
 /* ----------------
     media query 
 ------------------ */
@@ -292,7 +280,6 @@ footer h2{
 @media only screen and (max-width:577px) {
 	.banner{
 		flex-direction: column;
-		
 		margin-top: 50px;
 	}
 	.banner-text{
@@ -318,7 +305,7 @@ footer h2{
 		width: 100%;
 	}
 	nav{
-		height: auto;
+		width: 100%;
 		margin-bottom: 20px;
 		background-color: transparent;
 		display: flex;
@@ -362,6 +349,8 @@ footer h2{
 		font-size: 14px;
 		height: 48px;
 		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 
 	}
 	.banner-img{
@@ -379,26 +368,31 @@ footer h2{
 		margin-bottom: 20px;
 	}
 	
-	.main-section nav ul {
+	nav{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		background-color: transparent;
 		display: flex;
 		justify-content: center;
-		margin: 0;
 	}
-	.main-section nav ul li {
-		width: 150px;
-		margin: 0 10px;
+	nav ul{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+	}
+	nav ul li{
+		margin: 20px 0;
 		border: 1px solid gray;
 	}
-	.main-section nav ul li a{
-		font-size: 14px;
+	.main-section{
+		grid-template-columns: repeat(1,1fr);
+		justify-content: center;
 	}
-	.blogs {
-		grid-template-columns: repeat(2, 1fr);
+	.blogs{
+		grid-template-columns: repeat(2,1fr);
 	}
-	/* .social-media-icons {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	} */
+	
 	.view-all{
 		display: flex;
 		justify-content: center;
@@ -425,6 +419,11 @@ footer h2{
 	.banner-text {
 		width: 40%;
 	}
+	.banner-text>p{
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
 	.banner-title{
 		font-size: 2.5em;
 	}
@@ -444,14 +443,26 @@ footer h2{
 		padding: 0;
 		margin-bottom: 20px;
 	}
-	.main-section nav ul{
+	nav{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		background-color: transparent;
 		display: flex;
 		justify-content: center;
-		margin: 0;
 	}
-	.main-section nav ul li{
-		margin: 0 10px;
+	nav ul{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+	}
+	nav ul li{
+		margin: 20px 0;
 		border: 1px solid gray;
+	}
+	.main-section{
+		grid-template-columns: repeat(1,1fr);
+		justify-content: center;
 	}
 	.blogs{
 		grid-template-columns: repeat(2,1fr);
