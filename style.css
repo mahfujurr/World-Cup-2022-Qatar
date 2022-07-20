@@ -249,12 +249,12 @@ footer h2{
   -----------------------------------*/
 
 .match-sheduels{
-	padding: 30px 20px;
-	max-height: 200px;
+	padding: 53px 30px 53px 30px;
+	max-height: 242px;
 }
 .teams-flag{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 
 }
@@ -262,38 +262,28 @@ footer h2{
 	max-width: 80px;
 	max-height: 56px;
 }
+.blog-common{
+	text-align: center;
+}
+#country-vs{
+	font-size: 20px;
+}
+.blog-para{
+	font-size: 16px;
+	color: #4d4d4d;
+}
+/* .blogs{
+	padding:0 20px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.blog{
+	box-shadow: 2px 2px 25px gray;
+	border-radius: 10px;
+	overflow: hidden;
+} */
 
-/* ------------------------------------
-  all group pages point table styles  
-  -----------------------------------*/
-.team-point table{
-	align-items: center;
-	width: 100%;
-	padding: 0 20px 20px;
-
-}
-.team-point .blog-title{
-	display: flex;
-	justify-content: space-around;
-}
-.team-point table th, td{
-	padding: 10px 12px;
-}
-
-/* point table country color styles */
-
-.color-navyblue{
-	color: #ffffff;
-}
-.color-skyblue{
-	color: #5CA6F7;
-}
-.color-green{
-	color: #0F8034;
-}
-.color-red{
-	color: #E71D25;
-}
 
 /* ----------------
     media query 
