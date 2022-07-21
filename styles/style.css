@@ -273,6 +273,41 @@ footer h2{
 	font-size: 16px;
 	color: #4d4d4d;
 }
+
+/* Spining football styels  */
+.transitions{
+	display: flex;
+	align-items: flex-start;
+}
+.football-spining{
+	width: 100px;
+	height: 100px;
+}
+ .football-spining:hover{
+	width: 100px;
+	height: 100px;
+	animation-name: spin;
+	animation-duration: 5000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+	/* transform: rotate(3deg); */
+	 /* transform: rotate(0.3rad);/ */
+	 /* transform: rotate(3grad); */ 
+	 /* transform: rotate(.03turn);  */
+  }
+  .football-spining img{
+	width: 100%;
+  }
+	
+  
+  @keyframes spin {
+	  from {
+		  transform:rotate(0deg);
+	  }
+	  to {
+		  transform:rotate(360deg);
+	  }
+  }
 /* ----------------
     media query 
 ------------------ */
@@ -303,6 +338,9 @@ footer h2{
 	
 	.banner-img img{
 		width: 100%;
+	}
+	.transition{
+		display: none;
 	}
 	nav{
 		width: 100%;
@@ -355,6 +393,9 @@ footer h2{
 	}
 	.banner-img{
 		width: 60%;
+	}
+	.transition{
+		display: none;
 	}
 	.main-section {
 		grid-template-columns: 1fr;
